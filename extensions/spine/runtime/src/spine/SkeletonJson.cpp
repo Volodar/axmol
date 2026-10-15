@@ -74,7 +74,7 @@
 #include <spine/SequenceTimeline.h>
 #include <spine/Version.h>
 
-using namespace spine;
+namespace spine {
 
 static float toColor(const char *value, size_t index) {
 	char digits[3];
@@ -1615,3 +1615,5 @@ void SkeletonJson::setError(Json *root, const String &value1, const String &valu
 	_error = String(value1).append(value2);
 	delete root;
 }
+
+} // namespace spine

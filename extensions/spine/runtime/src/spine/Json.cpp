@@ -41,7 +41,7 @@ THE SOFTWARE.
 #include <assert.h>
 #include <math.h>
 
-using namespace spine;
+namespace spine {
 
 const int Json::JSON_FALSE = 0;
 const int Json::JSON_TRUE = 1;
@@ -557,3 +557,5 @@ int Json::json_strcasecmp(const char *s1, const char *s2) {
 		}
 	}
 }
+
+} // namespace spine
